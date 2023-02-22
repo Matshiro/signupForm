@@ -8,6 +8,68 @@
     <link rel="stylesheet" href="styles.scss">
 </head>
 <body>
-    
+    <section id="imageSection">
+        <img id="backgroundImage" src="" alt="">
+        <div id="logo">
+            <img src="./images/background.jpg" alt="green leafs">
+            <h1>ODIN</h1>
+        </div>
+        <div id="footer">Photo by 
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+            on
+            <a href="https://unsplash.com/">unsplash</a>
+        </div>
+    </section>
+    <section id="mainSection">
+        <div class="backgroundArea">
+            <h2>This is not a real online service! You know you need
+                something like this in your life to help you realize
+                your deepest dreams./n
+                Sign up <i>now</i> to get started
+            </h2>
+            <h2>You <i>know</i> you want to.</h2>
+        </div>
+        <div id="centerArea">
+            <form action="#">
+                <h2>Let's do this!</h2>
+                <div class="form">
+                    <label for="user_firstName">FIRST NAME</label>
+                </div>
+                <input type="text" name="firstName" id="user_firstName" minlength="2" required>
+                
+                <div class="form">
+                    <label for="user_lastName">LAST NAME</label>
+                </div>
+                <input type="text" name="lastName" id="user_lastName" minlength="2" required>
+                
+                <div class="form">
+                    <label for="user_email">EMAIL</label>
+                </div>
+                <input type="email" name="email" id="user_email" placeholder="email@email.pl" required>
+                
+                <div class="form">
+                    <label for="user_phone">PHONE NUMBER</label>
+                </div>
+                <input type="tel" name="phone" id="user_phone" pattern="[0-9]{9}"
+                placeholder="123-456-789" title="Wprowadź 9-cyfrowy nr telefonu" required>
+                
+                <div class="form">
+                    <label for="user_password">PASSWORD</label>
+                </div>
+                <input type="password" name="password" id="user_password" pattern="(?=.*\d)(?=.*[A-z])(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{5,26}" title="Hasło musi zawierać min 1 literę, 1 cyfrę i 1 znak specjalny" required>
+                <div class="form">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                </div>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
+                <br>
+                
+                <button type="submit">Create Account</button>
+
+            </form>
+        </div>
+            <h3>Already have an accout?
+                <a href="">Log in</a>
+            </h3>
+    </section>
 </body>
 </html>
