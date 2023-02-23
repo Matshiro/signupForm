@@ -131,3 +131,8 @@ button{
     text-decoration: none;
     color: #4f944f;
 }
+#smallText{
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    color: #FF0000;
+}
