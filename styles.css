@@ -101,7 +101,7 @@ body{
     font-weight: 800;
 }
 .form input{
-    border: 1px solid #FFF;
+    border: 1px solid;
     font-family: var(--font-main);
     background-color: var(--main-area-color);
     height: 1.5rem;
@@ -110,11 +110,6 @@ body{
 }
 .form input:invalid{
     border-color: black;
-}
-
-.form input:valid{
-    border-color: green;
-    background-color: rgba(0, 128, 0, 0.303);
 }
 button{
     margin: 0.5rem 0rem -0.5rem 2rem;
