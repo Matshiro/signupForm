@@ -5,13 +5,14 @@
     --main-area-color: #FEFEFE;
     --footer-font-color: rgb(213, 241, 218);
     --link-font-color: rgb(113, 189, 96);
-    --logo-background-color:  rgba(4, 7, 9, 0.485);
+    --logo-background-color:  rgba(193, 194, 195, 0.485);
     --font-main-color: #FFF;
     --font-main: "Poppins", sans-serif;
     --font-form-color: #393939;
     --button-background-color: #4f944f;
     --font-size-main: 1rem;
     --font-size-second: 0.7rem;
+    --font-h2: #3b3b3b;
 }
 
 *{
@@ -48,13 +49,18 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-left: -1rem;
     margin-bottom: 53vh;
     background-color: var(--logo-background-color);
     color: var(--font-main-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: "Roboto","Poppins", sans-serif;
+}
+#logo img{
+    width: 5rem;
+    height: 5rem;
 }
 #mainSection{
     display: flex;
@@ -64,11 +70,12 @@ body{
     background-color: var(--background-color);
     font-family: var(--font-main);
     font-size: var(--font-size-second);
+    color: var(--font-h2);
     gap: 1rem;
     
 }
 .backgroundArea{
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
 }
 .backgroundArea > h2{
     margin: 1rem 0rem 0rem 0rem;
@@ -112,7 +119,7 @@ body{
     border-color: black;
 }
 button{
-    margin: 0.5rem 0rem -0.5rem 2rem;
+    margin: 1.5rem 0rem -1rem 2rem;
     font: var(--font-main);
     background-color: var(--button-background-color);
     color: var(--font-main-color);
@@ -123,7 +130,7 @@ button{
     height: 3em;
 }
 .backgroundArea h3{
-    margin-top: 0rem;
+    margin-top: -2rem;
     font-weight: 500;
 
 }
