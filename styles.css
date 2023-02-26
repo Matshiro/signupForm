@@ -21,9 +21,8 @@
 }
 body{
     display: flex;
-    max-width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
+    min-width: 100dvw;
+    min-height: 100dvh;
 }
 #imageSection{
     display: flex;
@@ -89,12 +88,12 @@ body{
     margin: 0rem 2rem;
 }
 #formContainer{
-    
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem 5rem;
     margin: 1rem 2rem;
-    margin-right: 15rem;
+    margin-right: auto;
+    max-width: 35rem;
 }
 .form{
     display: flex;
@@ -142,4 +141,20 @@ button{
     font-size: 0.8rem;
     font-family: "Roboto", sans-serif;
     color: #FF0000;
+}
+
+@media screen and (max-width: 500px){
+    #logo{
+        flex-direction: column;
+    }
+    #formContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #letsDoThis{
+        margin: auto;
+        width: fit-content;
+    }
 }
